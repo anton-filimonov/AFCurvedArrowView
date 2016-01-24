@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurveType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-xH-Vq9">
+                                <rect key="frame" x="259" y="40" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Changing Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtc-1Z-hcE">
+                                <rect key="frame" x="242" y="113" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="scu-kZ-5ny">
+                                <rect key="frame" x="221" y="142" width="159" height="29"/>
+                                <segments>
+                                    <segment title="Start Point"/>
+                                    <segment title="EndPoint"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrow type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-oS-v6h">
+                                <rect key="frame" x="20" y="571" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZI0-zl-Hkw">
+                                <rect key="frame" x="117" y="568" width="103" height="29"/>
+                                <segments>
+                                    <segment title="Line"/>
+                                    <segment title="Image"/>
+                                </segments>
+                                <connections>
+                                    <action selector="arrowTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IMh-DO-se6"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-QE-mSl">
+                                <rect key="frame" x="166" y="69" width="269" height="29"/>
+                                <segments>
+                                    <segment title="Line"/>
+                                    <segment title="Quad Curve"/>
+                                    <segment title="Cubic Curve"/>
+                                </segments>
+                                <connections>
+                                    <action selector="lineTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="v1D-rX-iBY"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXY-5W-PJB" customClass="AFCurvedArrowView">
+                                <rect key="frame" x="20" y="178" width="560" height="402"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="arrowHead">
+                                        <point key="value" x="0.69999999999999996" y="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="arrowTail">
+                                        <point key="value" x="0.10000000000000001" y="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="controlPoint1">
+                                        <point key="value" x="0.10000000000000001" y="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="controlPoint2">
+                                        <point key="value" x="0.90000000000000002" y="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="arrowHeadImageAnchorPoint">
+                                        <point key="value" x="0.5" y="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowHeadWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowHeadHeight">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZI0-zl-Hkw" firstAttribute="leading" secondItem="Tc8-oS-v6h" secondAttribute="trailing" constant="8" id="3pC-bP-KRQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tc8-oS-v6h" secondAttribute="bottom" constant="8" id="91v-OT-it5"/>
+                            <constraint firstItem="O3b-xH-Vq9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="BrK-Gs-Znx"/>
+                            <constraint firstItem="O3b-xH-Vq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6Y-iy-NQ8"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="kkJ-QE-mSl" secondAttribute="trailing" constant="20" id="DNY-Lc-ZXn"/>
+                            <constraint firstItem="BXY-5W-PJB" firstAttribute="top" secondItem="scu-kZ-5ny" secondAttribute="bottom" constant="8" id="FYc-r1-RNe"/>
+                            <constraint firstItem="kkJ-QE-mSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G2y-lE-Xtg"/>
+                            <constraint firstItem="Tc8-oS-v6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="GlW-Du-XJX"/>
+                            <constraint firstItem="kkJ-QE-mSl" firstAttribute="top" secondItem="O3b-xH-Vq9" secondAttribute="bottom" constant="8" id="I5w-fH-0WC"/>
+                            <constraint firstAttribute="trailing" secondItem="BXY-5W-PJB" secondAttribute="trailing" constant="20" id="UDy-ap-x2W"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="scu-kZ-5ny" secondAttribute="trailing" constant="20" id="WKx-wq-6Qb"/>
+                            <constraint firstItem="Dtc-1Z-hcE" firstAttribute="top" secondItem="kkJ-QE-mSl" secondAttribute="bottom" constant="16" id="Y8g-Fq-If7"/>
+                            <constraint firstItem="BXY-5W-PJB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="aTs-l3-5VB"/>
+                            <constraint firstItem="kkJ-QE-mSl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cuI-uR-XTD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BXY-5W-PJB" secondAttribute="bottom" constant="20" id="ekx-rr-KDx"/>
+                            <constraint firstItem="scu-kZ-5ny" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="gVA-9q-uLj"/>
+                            <constraint firstItem="scu-kZ-5ny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gik-ZF-DHg"/>
+                            <constraint firstItem="scu-kZ-5ny" firstAttribute="top" secondItem="Dtc-1Z-hcE" secondAttribute="bottom" constant="8" id="kaS-ZY-efi"/>
+                            <constraint firstItem="ZI0-zl-Hkw" firstAttribute="centerY" secondItem="Tc8-oS-v6h" secondAttribute="centerY" id="m0X-gs-tPI"/>
+                            <constraint firstItem="Dtc-1Z-hcE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uce-ys-Qaa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowView" destination="BXY-5W-PJB" id="dQb-8h-eoq"/>
+                        <outlet property="curveTypeSelectionControl" destination="kkJ-QE-mSl" id="SHB-eO-ftc"/>
+                        <outlet property="tweakingPointSelectionControl" destination="scu-kZ-5ny" id="nmt-wC-fF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
