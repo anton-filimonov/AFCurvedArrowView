@@ -1,0 +1,16 @@
+PODS:
+  - AFCurvedArrowView (0.1.0)
+
+DEPENDENCIES:
+  - AFCurvedArrowView (from `../`)
+
+EXTERNAL SOURCES:
+  AFCurvedArrowView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFCurvedArrowView: d777421de810f78d3ce8ec9250144c368fcb74c9
+
+PODFILE CHECKSUM: 703a3d4f1065db03f0b8f0b9b2501a9b189ea3cc
+
+COCOAPODS: 1.2.1

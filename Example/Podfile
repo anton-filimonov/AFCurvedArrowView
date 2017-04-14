@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'AFCurvedArrowView_Example' do
+  pod 'AFCurvedArrowView', :path => '../'
+
+  target 'AFCurvedArrowView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

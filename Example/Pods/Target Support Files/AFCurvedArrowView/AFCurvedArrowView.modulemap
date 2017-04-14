@@ -1,0 +1,6 @@
+framework module AFCurvedArrowView {
+  umbrella header "AFCurvedArrowView-umbrella.h"
+
+  export *
+  module * { export * }
+}
