@@ -1,4 +1,4 @@
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AwesomeTableAnimationCalculator.svg)](https://img.shields.io/cocoapods/v/AwesomeTableAnimationCalculator.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AFCurvedArrowView.svg)](https://img.shields.io/cocoapods/v/AFCurvedArrowView.svg)
 [![Version](https://img.shields.io/cocoapods/v/AFCurvedArrowView.svg?style=flat)](http://cocoapods.org/pods/AFCurvedArrowView)
 [![License](https://img.shields.io/cocoapods/l/AFCurvedArrowView.svg?style=flat)](http://cocoapods.org/pods/AFCurvedArrowView)
 [![Platform](https://img.shields.io/cocoapods/p/AFCurvedArrowView.svg?style=flat)](http://cocoapods.org/pods/AFCurvedArrowView)
@@ -7,8 +7,8 @@
 A view to show a configurable arrow wherever you need. (Mostly useful for user guides) You don’t need to have different images for arrows for different screen sizes.
 
 ## Installation
-* You can install it using cocoapods. For it just add `pod 'AFCurvedArrowView'` to your Podfile and run `pod install`
-* Or you can just copy files AFCurvedArrowView.h and .m to your project.
+* You can install it using cocoapods. Just add `pod 'AFCurvedArrowView'` to your Podfile and run `pod install`
+* Or you can just copy files `AFCurvedArrowView.h` and `.m` to your project.
 
 ## Usage
 Create AFCurvedArrowView, tweak it and add to your view like this:
