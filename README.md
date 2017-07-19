@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/cocoapods/v/AFCurvedArrowView.svg?style=flat)](http://cocoapods.org/pods/AFCurvedArrowView)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/bealex/AwesomeTableAnimationCalculator/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/anton-filimonov/AFCurvedArrowView/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/AFCurvedArrowView.svg?style=flat)](http://cocoapods.org/pods/AFCurvedArrowView)
 
 # AFCurvedArrowView
