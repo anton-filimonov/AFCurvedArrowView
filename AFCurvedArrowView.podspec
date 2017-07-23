@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AFCurvedArrowView'
-  s.version          = '1.0.0'
+  s.version          = ‘1.0.1’
   s.summary          = 'A view to show a configurable arrow wherever you need'
   s.description      = <<-DESC
 A view to show a configurable arrow wherever you need. (Mostly useful for user guides) With its' help you don’t need to have different images for arrows for different screen sizes anymore.
